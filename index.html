@@ -7,44 +7,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body >
+    <div id="formdiv">
     <form id="form">
-        <label>selling Price</label>
-        <input type="text" id="price">
+        <div id="price">
+        <label>Selling Price</label>
+        <input type="text" id="sp">
+        </div>
+       <div id="name">
         <label>Product Name</label>
-        <input type="text" id="name">
-        <label>Choose category</label>
-        <select id="s2" onchange="myfunction(event)">
+        <input type="text" id="pname">
+       </div>
+        <div id="s2"> 
+            <label>Choose category</label>
+        <select  onchange="myfunction(event)">
             <option>Electronic Item</option>
             <option>Food Item</option>
             <option>Skincare Item</option>
         </select>
-        <button type="submit">submit</button>
+        </div>
+        <div id="btnsubmit">
+            <button type="submit" id="btn">submit</button>
+        </div>
     </form>
+    </div>
     <div id="listContainer">
     <div id="e1">
-        <h2>
+        <h2 class="items">
             Electronic Item
         </h2>
-        <ul id="Electronic Item">
+        <ul id="Electronic Item" class="ulItems">
             
          </ul>
          <!-- <button>xx</button> -->
     </div>
     <div id="f1">
-        <h2>
+        <h2 class="items">
             Food Item
         </h2>
-        <ul id="Food Item">
+        <ul id="Food Item"  class="ulItems">
             
          </ul>
     </div>
-    <div id="s1">
-        <h2>
+    <div class="items">
+        <h2 id="sitem">
             Skincare Item
         </h2>
-        <ul id="Skincare Item">
+        <ul id="Skincare Item"  class="ulItems">
            
          </ul>
     </div>
