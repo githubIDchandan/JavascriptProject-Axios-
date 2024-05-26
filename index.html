@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form id="form">
+        <label>selling Price</label>
+        <input type="text" id="price">
+        <label>Product Name</label>
+        <input type="text" id="name">
+        <label>Choose category</label>
+        <select id="s2" onchange="myfunction(event)">
+            <option>Electronic Item</option>
+            <option>Food Item</option>
+            <option>Skincare Item</option>
+        </select>
+        <button type="submit">submit</button>
+    </form>
+    <div id="listContainer">
+    <div id="e1">
+        <h2>
+            Electronic Item
+        </h2>
+        <ul id="Electronic Item">
+            
+         </ul>
+         <!-- <button>xx</button> -->
+    </div>
+    <div id="f1">
+        <h2>
+            Food Item
+        </h2>
+        <ul id="Food Item">
+            
+         </ul>
+    </div>
+    <div id="s1">
+        <h2>
+            Skincare Item
+        </h2>
+        <ul id="Skincare Item">
+           
+         </ul>
+    </div>
+  
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
